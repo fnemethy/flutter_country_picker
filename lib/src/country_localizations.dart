@@ -9,7 +9,10 @@ import 'res/strings/et.dart';
 import 'res/strings/fr.dart';
 import 'res/strings/gr.dart';
 import 'res/strings/hr.dart';
+import 'res/strings/hu.dart';
 import 'res/strings/ku.dart';
+import 'res/strings/lt.dart';
+import 'res/strings/lv.dart';
 import 'res/strings/nb.dart';
 import 'res/strings/nn.dart';
 import 'res/strings/np.dart';
@@ -19,8 +22,6 @@ import 'res/strings/ru.dart';
 import 'res/strings/tr.dart';
 import 'res/strings/tw.dart';
 import 'res/strings/uk.dart';
-import 'res/strings/lv.dart';
-import 'res/strings/lt.dart';
 
 class CountryLocalizations {
   final Locale locale;
@@ -99,7 +100,8 @@ class CountryLocalizations {
         return lv[countryCode];
       case 'lt':
         return lt[countryCode];
-
+      case 'hu':
+        return hu[countryCode];
       case 'en':
       default:
         return en[countryCode];
@@ -135,6 +137,7 @@ class _CountryLocalizationsDelegate
       'de',
       'lt',
       'lv',
+      'hu',
     ].contains(locale.languageCode);
   }
 
