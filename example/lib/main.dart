@@ -69,7 +69,6 @@ class HomePage extends StatelessWidget {
               favorite: <String>['SE'],
               //Optional. Shows phone code before the country name.
               showPhoneCode: true,
-              showWorldWide: true,
               onSelect: (Country country) {
                 print('Select country: ${country.displayName}');
               },
@@ -90,6 +89,11 @@ class HomePage extends StatelessWidget {
                       color: const Color(0xFF8C98A8).withOpacity(0.2),
                     ),
                   ),
+                ),
+                // Optional. Styles the text in the search field
+                searchTextStyle: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 18,
                 ),
               ),
             );
